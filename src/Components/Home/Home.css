@@ -1,0 +1,13 @@
+.GalleryDiv{
+    display:flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    border-radius: 10px;padding: 5px;
+    justify-content:space-between;
+}
+.HomeBottomNav{
+
+}

@@ -1,0 +1,218 @@
+
+.DesContainer{
+   width: 76%;
+   margin-left:auto;
+   margin-right: auto;
+   display:flex;
+   justify-content:space-between;
+   /* border: 2px solid black; */
+   margin-top: 20px;
+}
+.TitleAddressForSale{
+    border: 3px solid rgb(134, 73, 73);
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-radius: 10px;
+    padding: 4px;
+    height: 100px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.ForSale{
+    margin-right: 20px;
+    font-size:25px;
+    /* border: 1px solid blue; */
+    /* background-color:rgb(240, 140, 140); */
+    height:35px;
+}
+.ForSale span{
+    background-color:black;
+    color: white;
+}
+.TitleAddress{
+    margin-left: 20px;
+    text-align: left;
+}
+.BasicNav{
+    border-bottom: 1px solid rgb(41, 41, 41);
+    margin: 15px;
+    margin-top:25px;
+    display:flex;
+    justify-content:flex-start;
+   
+    
+}
+.BasicNav a{
+    margin-left:14px;margin-right:14px;
+    border: 2px solid green;
+    text-decoration: none;
+    border-bottom:none;
+    border-radius: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.PendingImage{
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+.PendingImage img:hover{
+    opacity: .9;
+}
+.PendingImage img{
+    width:90px;
+    height:80px;
+    margin: 5px;
+    opacity: .5;
+    cursor: pointer;
+    border: 2px solid rgb(121, 18, 4);
+
+}
+
+
+.PendingImage img:first-of-type{
+    opacity:1;
+    border: 3px solid red;
+}
+.ViewImage{
+    width: 90%;
+    height:490px;
+    border: 1px solid black;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.ViewImage img{
+    height:100%;width:100%;
+    padding: 5px;
+}
+.ImageGallery{
+    border-bottom: 1px solid rgb(70, 68, 68);
+    
+}
+.BasicInfo li{
+    list-style-type: none;
+    text-align: left;
+}
+.BasicInfo{margin-top:15px;}
+.BasicInfo ul{
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid green; */
+    width:24%;
+}
+.postedBy{
+    border: 3px solid rgb(42, 95, 42);
+    width: 25%;
+    margin-left: 19px;
+    height: 300px;
+    border-radius: 9px;
+    top: 0;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    position: sticky;
+}
+.InfoPostAndFlat{
+    /* border: 3px solid red; */
+    width: 74%;
+}
+.description p{
+    /* border: 3px solid blue; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .DesContainer{
+        width: 100%;
+        padding: 5px;
+        display:flex;
+        justify-content:space-between;
+        flex-direction: column;
+        border: 9px solid black;
+        margin-top: 10px;
+     }
+     .InfoPostAndFlat{
+        border: 3px solid red; 
+        width: 99%;
+        padding: 5px;
+    }
+    .TitleAddress{
+        margin-left: 2px;
+        text-align: left;
+        border: 3px solid rgb(166, 255, 0); 
+        width: 60%;
+        word-wrap: break-word;
+    }
+    .TitleAddress h2{
+        border: 3px solid red; 
+        width:95%;
+        border: 3px solid red; 
+    }
+    .ForSale{
+        margin-right: 0px;
+        font-size:17px;
+        /* border: 1px solid blue; */
+        /* background-color:rgb(240, 140, 140); */
+        height:30px;
+    }
+    .BasicNav{
+        
+        justify-content:space-around;
+        
+    }
+    .BasicInfo li{
+        list-style-type: none;
+        text-align: left;
+    }
+    .BasicInfo h3{
+        width: 90%;
+        text-align: left;
+    }
+    .BasicInfo{margin-top:15px;}
+    .BasicInfo ul{
+        text-align: left;
+        width: 90%;
+        margin-left: -9px;
+        border: 3px solid rgb(136, 255, 0);
+    }
+    .description, .BasicInfo{
+        width:95%;
+        margin-left:auto;
+        margin-right: auto;
+        border: 3px solid blue;
+    }
+    .description p{
+        
+        text-align: left;
+        width: 90%;
+        margin-left: 14px;
+    }
+    .description h2{
+        /* border: 3px solid blue; */
+        width: 90%;
+        text-align: left;
+    }
+    .PendingImage img{
+        width:110px;
+        height:100px;
+        margin: 5px;
+        opacity: .6;
+        cursor: pointer;
+     
+    
+    }
+    .postedBy{
+        border: 3px solid rgb(42, 95, 42);
+        width: 80%;
+        margin-left:auto;
+        margin-right:auto;
+        height: 260px;
+        border-radius: 7px;
+        position:relative;
+    }
+    
+
+}

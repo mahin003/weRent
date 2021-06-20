@@ -1,0 +1,64 @@
+.banner{
+    height: 330px;
+    background-image: url("../../images/Rental_vector_2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.Title {
+    position: relative;
+    text-decoration: none; 
+    margin-left:180px;
+    font-size:33px;
+    color:Black;
+    
+  }
+  .Title a{
+      text-decoration: none;
+  }
+  .Title:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: #256e92;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .Title:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  /* // links */
+  .navbar-light .nav-item.active .nav-link,
+  .navbar-light .nav-item .nav-link:active,
+  .navbar-light .nav-item .nav-link:focus,
+  .navbar-light .nav-item:hover .nav-link {
+      color: #0d3f6d;
+  }
+#navbarNav{
+    margin-right:160px;
+}
+
+  #Search{
+    width:50%;
+    border: 1px solid rgb(231, 71, 7);
+    
+  }
+
+  @media only screen and (max-width: 1300px) {
+  .Title{
+     margin-left: 10px;
+    }
+    #navbarNav{
+        margin-right:0px;
+    }
+    #Search{
+      width:100%;
+    }
+    
+  }

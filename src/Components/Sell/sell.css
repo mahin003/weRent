@@ -1,0 +1,13 @@
+.SellMenu{
+    display:flex;
+}
+.Links{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    
+}
+.LinkDirect{
+    border:1px solid red;
+    width:60%;
+}

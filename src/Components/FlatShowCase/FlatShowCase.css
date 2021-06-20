@@ -1,0 +1,89 @@
+.GalleryCard{
+    width: 32%;
+    border: 1px solid green;
+    margin: 5px;
+    /* display:flex;
+    flex-direction: column;
+    justify-content:space-between;  */
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+    height:460px;
+    box-shadow: 0 4px 8px 0 rgba(100, 62, 62, 0.2), 0 6px 20px 0 rgba(226, 59, 59, 0.19);
+}
+.Icons{
+    display:flex;
+}
+.Image{
+    /* border: 7px solid green; */
+    height:210px;
+    border-radius: 5px;
+}
+.Image img{
+    border-radius: 5px;
+    padding: 3px;
+    /* transition: width 2s, height 2s; */
+}
+.Image img :hover{
+   padding: 15px;
+}
+.imgelen{
+    display: flex;
+    /* border: 1px solid green; */
+    align-items: baseline;
+    width:98%;
+    height: 30px;
+    justify-content:flex-start;   
+    position: relative;
+    top: -30px;
+    margin-left:auto ;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+}
+.imgelen p{
+    font-size:20px;
+    margin-left:10px ;
+}
+.IconsWithInfo{
+    width:100%;
+    bottom: 0px;
+    display:flex;
+    justify-content:space-around;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0px;
+    height:min-content;
+    /* border: 1px solid green; */
+    background-color:rgba(228, 213, 213, 0.603)
+}
+.IconsWithInfo p{
+    font-size: 16px;
+}
+.basicInfo{
+    /* border: 2px solid red; */
+    height: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    .GalleryCard{
+        width: 100%;
+        border: 1px solid green;
+       
+        margin-bottom: 13px;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between; 
+        position: relative;
+        cursor: pointer;
+        border-radius: 6px;
+        height:460px;
+        
+    }
+    .basicInfo{
+        /* border: 2px solid red; */
+        margin-top: 0px;
+       
+    }
+    }

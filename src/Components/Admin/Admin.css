@@ -1,0 +1,13 @@
+#Links a{
+    text-decoration:none;
+    margin-top: 2%;
+}
+#Links{
+    height: 70px;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#Links a:hover{
+    text-decoration:underline;
+    color: black;
+}
