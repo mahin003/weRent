@@ -201,7 +201,7 @@ const Vendorform = () => {
          }
 
     //    console.log("Final Result ",sellProductData);      
-       const url = `http://localhost:5000/addServices`;
+       const url = `https://still-temple-26727.herokuapp.com/addServices`;
          fetch(url,{
              method: "POST",
              headers:{

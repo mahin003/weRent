@@ -8,7 +8,7 @@ const Flats = () => {
     const [FlatList, setFlatList]= useState([]);
     const his = useHistory();
     useEffect(() =>{
-        fetch("http://localhost:5000/addServices")
+        fetch("https://still-temple-26727.herokuapp.com/getServices")
             .then(res => res.json())
             .then(data =>setFlatList(data))
     },[])

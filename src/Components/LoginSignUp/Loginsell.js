@@ -73,7 +73,7 @@ const Loginsell = () => {
                 var user = userCredential.user;
                 // console.log("Signed IN");
 
-                const url = `http://localhost:5000/getSeller/${email}`
+                const url = `https://still-temple-26727.herokuapp.com/getSeller/${email}`
 
                 fetch(url, {
                     method: 'GET'
@@ -134,7 +134,7 @@ const Loginsell = () => {
                         isSeller: true
                     }
 
-                    const url = `http://localhost:5000/addUsers`;
+                    const url = `https://still-temple-26727.herokuapp.com/addUsers`;
                     fetch(url, {
                         method: "POST",
                         headers: {

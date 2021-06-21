@@ -21,7 +21,7 @@ const NewAdmin = () => {
                         isAdmin: true
                     }
     
-                    const url = `http://localhost:5000/addAdmin`;
+                    const url = `https://still-temple-26727.herokuapp.com/addAdmin`;
                     fetch(url, {
                         method: "POST",
                         headers: {

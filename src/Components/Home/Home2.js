@@ -16,7 +16,7 @@ export default Home2;
 // const [ProductShowCase, setProductShowCase] = useState(null);
 
 // useEffect(() => {
-//     fetch("http://localhost:5000/addServices")
+//     fetch("https://still-temple-26727.herokuapp.com/addServices")
 //         .then(res => res.json())
 //         .then(data => {
 //             console.log("data", data)

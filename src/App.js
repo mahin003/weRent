@@ -57,7 +57,7 @@ function App() {
   const [ShowCase, setShowCase] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/addServices")
+    fetch("https://still-temple-26727.herokuapp.com/getServices")
       .then(res => res.json())
       .then(data => {
         // console.log("data", data.filter(x=>x.status=="Open"))

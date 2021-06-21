@@ -53,7 +53,7 @@ const SignUp = () => {
                         isSeller:true
                     }
     
-                    const url = `http://localhost:5000/addUsers`;
+                    const url = `https://still-temple-26727.herokuapp.com/addUsers`;
                     fetch(url, {
                         method: "POST",
                         headers: {

@@ -39,7 +39,7 @@ const Description = () => {
     const [pending, setPending] = useState([{ img_url: '' }]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/description/${id}`, {
+        fetch(`https://still-temple-26727.herokuapp.com/description/${id}`, {
             method: 'GET',
         }).then(res => res.json())
             .then(data => {

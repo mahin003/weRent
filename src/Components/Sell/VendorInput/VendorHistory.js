@@ -12,7 +12,7 @@ const VendorHistory = (props) => {
     // console.log(" trigger ", trigger)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/getUser/history/${props.UserInfo.Email}`, {
+        fetch(`https://still-temple-26727.herokuapp.com/getUser/history/${props.UserInfo.Email}`, {
             method: 'GET'
         })
             .then(res => res.json())
@@ -24,13 +24,13 @@ const VendorHistory = (props) => {
     }, [])
 
     const HandleStatus = (Id, event) => {
-        console.log("clicked ", Id)
+        // console.log("clicked ", Id)
         const Status = event.target.value;
 
         const item = { Id, Status }
-        console.log("item ", item, Status)
+        // console.log("item ", item, Status)
 
-        fetch(`http://localhost:5000/product/update/${Id}`, {
+        fetch(`https://still-temple-26727.herokuapp.com/product/update/${Id}`, {
             //  mode: 'no-cors',
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
@@ -45,8 +45,8 @@ const VendorHistory = (props) => {
 
         var objIndex = res.findIndex((obj => obj._id == Id));
 
-        console.log("Before update: ", res[objIndex])
-        console.log(Status)
+        // console.log("Before update: ", res[objIndex])
+        // console.log(Status)
         res[objIndex].status = Status;
             setTrigger(res)
             

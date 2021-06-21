@@ -9,7 +9,7 @@ const Seller = () => {
     const [User, setUser] =useState([]);
     
     useEffect(()=>{
-        fetch("http://localhost:5000/getSeller")
+        fetch("https://still-temple-26727.herokuapp.com/getSeller")
             .then(res => res.json())
             .then(data =>setUser(data))
     },[])

@@ -168,7 +168,7 @@ const Login = () => {
         // console.log(userCredential);
         var user = userCredential.user;
         // console.log("Signed IN", user);
-        const url = `http://localhost:5000/getUser/${email}`
+        const url = `https://still-temple-26727.herokuapp.com/getUser/${email}`
 
         fetch(url, {
           method: 'GET'

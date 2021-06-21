@@ -7,9 +7,9 @@ const AdminList = () => {
     const [UserAdmin, setUserAdmin] =useState([]);
     
     useEffect(()=>{
-        fetch("http://localhost:5000/getAdminList")
+        fetch("https://still-temple-26727.herokuapp.com/getAdminList")
             .then(res => res.json())
-            .then(data =>{console.log("admin ", UserAdmin)
+            .then(data =>{
             setUserAdmin(data)} )
     },[])
     return (
