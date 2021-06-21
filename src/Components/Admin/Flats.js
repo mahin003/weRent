@@ -12,6 +12,23 @@ const Flats = () => {
             .then(res => res.json())
             .then(data =>setFlatList(data))
     },[])
+
+    const ServiceDelete=(id)=>{
+
+        // console.log("ID ",id)
+        fetch(`https://still-temple-26727.herokuapp.com/deleteService/${id}`,{
+            method: 'DELETE'
+        })
+        .then(res=>res.json())
+        .then(result=>{
+            console.log("deleted ");
+        })
+        alert("Deleted");
+        const res=[...FlatList];
+        setFlatList(res.filter(dt=> dt._id!=id));
+
+    }
+
     return (
         <div style={{padding:"17px", margin:"20px" ,overflowX:"auto", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
             <h3>Available Flats</h3>
@@ -28,6 +45,7 @@ const Flats = () => {
                     <th>Date Added</th>
                     <th>Price</th>
                     <th>See Details</th>
+                    <th>Delete</th>
     
              </tr>
              {
@@ -43,6 +61,7 @@ const Flats = () => {
                      <td>{data.Date}</td>
                      <td>{data.Price}</td>
                      <td> <Button variant="outlined" onClick={()=>his.push(`/description/${data._id}`)}>Details</Button> </td>
+                     <td> <Button variant="outlined" onClick={()=>ServiceDelete(data._id)}>Delete</Button> </td>
 
                  </tr>)
              }

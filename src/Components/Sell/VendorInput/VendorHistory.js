@@ -49,10 +49,24 @@ const VendorHistory = (props) => {
         // console.log(Status)
         res[objIndex].status = Status;
             setTrigger(res)
-            
-
 
     }
+    const ServiceDelete=(id)=>{
+
+        // console.log("ID ",id)
+        fetch(`https://still-temple-26727.herokuapp.com/deleteService/${id}`,{
+            method: 'DELETE'
+        })
+        .then(res=>res.json())
+        .then(result=>{
+            console.log("deleted ");
+        })
+        alert("Deleted");
+        const res=[...History];
+        setHistory(res.filter(dt=> dt._id!=id));
+
+    }
+
     return (
         <div style={{overflowX:"auto", margin:"4px", paddingTop:"15px"}}>
             <h1>history</h1>
@@ -76,7 +90,7 @@ const VendorHistory = (props) => {
                         {
                         data.status == "Close" && <td><button onClick={(e) => HandleStatus(data._id, e)} type="button" className="btn btn-outline-success" value="Open">Open</button> <button variant="outlined" color="primary" disabled>Close</button></td>
                         }
-                        <td><Button varient="outlined">Delete</Button> <Button varient="outlined">Edit</Button> </td>
+                        <td><Button varient="outlined" onClick={()=>ServiceDelete(data._id)} >Delete</Button> <Button varient="outlined">Edit</Button> </td>
                         <td><Button variant="outlined" color="secondary" onClick={()=>his.push(`/description/${data._id}`)} >Details</Button> </td>
                     </tr>
                     )
